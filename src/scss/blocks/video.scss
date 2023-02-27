@@ -1,0 +1,60 @@
+.video-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(48, 9, 68);
+  border-radius: 2rem;
+}
+
+.video {
+  width: 90%;
+  height: 90%;
+  border-radius: 1rem;
+
+  &__controls {
+    width: 90%;
+    height: 50px;
+    background-color: rgb(99, 62, 125);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+  }
+  &__volume {
+    width: 20px;
+  }
+  &__pause {
+    width: 13px;
+  }
+  &__back {
+    width: 20px;
+  }
+  &__bar-dark {
+    width: 400px;
+    height: 10px;
+    background-color: rgb(38, 4, 51);
+    border-radius: 1rem;
+    position: relative;
+  }
+  &__bar {
+    position: absolute;
+    height: 10px;
+    width: var(--bar-width);
+    border-radius: 7px;
+    background-color: rgb(221, 221, 221);
+    pointer-events: none;
+  }
+  &__ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(192, 146, 211);
+    right: 0;
+  }
+}
