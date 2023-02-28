@@ -24,6 +24,7 @@
     align-items: center;
     gap: 1rem;
     justify-content: center;
+    position: relative;
   }
   &__volume {
     width: 20px;
@@ -56,5 +57,33 @@
     border-radius: 10px;
     background-color: rgb(192, 146, 211);
     right: 0;
+  }
+}
+
+.range {
+  display: none;
+
+  &__input {
+    width: 70px;
+    accent-color: rgb(185, 159, 223);
+  }
+}
+.range--show {
+  display: block;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 20px;
+  top: -40px;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: arial;
+  font-size: 0.8rem;
+  width: 10px;
+  &__current {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
